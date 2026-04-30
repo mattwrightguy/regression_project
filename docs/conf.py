@@ -23,6 +23,7 @@ extensions = [
     'sphinx.ext.napoleon',
     'sphinx.ext.viewcode',
     'sphinx_copybutton',
+    'sphinx.ext.githubpages'
 ]
 
 templates_path = ['_templates']
@@ -35,3 +36,13 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_theme = 'furo'
 html_static_path = ['_static']
+# The URL where your documentation will be hosted
+html_baseurl = 'https://mattwrightguy.github.io/regression_project/'
+
+# This ensures the theme handles the paths correctly
+html_theme_options = {
+    # If you want to add your GitHub link to the top right:
+    "source_repository": "https://github.com/mattwrightguy/regression_project/",
+    "source_branch": "main",
+    "source_directory": "docs/",
+}
