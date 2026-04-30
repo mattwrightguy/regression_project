@@ -11,9 +11,6 @@ class BaseRegressor(ABC):
         b: The model bias.
         J_history: A list of costs for each iteration.
     """
-    alpha: float
-    n_iterations: int
-    lambda_: float
     w: Optional[np.ndarray]
     b: float
     J_history: list
